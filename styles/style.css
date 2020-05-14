@@ -1,0 +1,491 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+header {
+  background-color: red;
+}
+
+body::-webkit-scrollbar {
+  width: 0.25rem;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: black;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: yellowgreen;
+}
+
+body {
+  background-color: #140318;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #b9f148;
+  position: fixed;
+  width: 4rem;
+}
+
+nav ul {
+  list-style: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100vh;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+nav li {
+  padding-bottom: 2em;
+  padding-top: 2em;
+}
+
+.nav-item {
+  width: 100%;
+  margin-right: 15px;
+}
+
+.nav-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 5rem;
+}
+
+.nav-link:hover {
+  background: #140318;
+  color: #e9ff24;
+}
+
+.link-text {
+  display: none;
+  margin-left: 1rem;
+}
+
+.nav-link i {
+  margin: 0 1.5rem;
+}
+
+.home {
+  position: absolute;
+  top: 10%;
+  left: 15%;
+}
+
+.home img {
+  height: 350px;
+  position: absolute;
+  left: 90%;
+}
+
+.home h1 {
+  font-size: 90px;
+  font-family: Arial, sans-serif;
+  color: white;
+}
+
+.home h2 {
+  font-size: 65px;
+  font-family: Arial, sans-serif;
+  color: white;
+}
+
+@media (max-width: 1068px) {
+  .home {
+    position: absolute;
+    top: 25%;
+    left: 15%;
+  }
+  .home img {
+    height: 150px;
+    position: absolute;
+    left: 60%;
+  }
+  .home h1 {
+    font-size: 70px;
+  }
+  .home h2 {
+    font-size: 45px;
+  }
+}
+
+.about {
+  position: absolute;
+  top: 10%;
+  left: 15%;
+}
+
+.about h1 {
+  color: #b9f148;
+  font-family: Arial, sans-serif;
+  font-size: 100px;
+}
+
+.about h3 {
+  color: #b9f148;
+  font-family: Arial, sans-serif;
+  font-size: 30px;
+}
+
+.about p {
+  font-size: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.about-info {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 30px;
+      grid-template-areas: "bioimage bio bio" "job1 job2 job3";
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  width: 50%;
+  height: 30%;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+.bio-image {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: bioimage;
+  margin: auto;
+  width: 100%;
+  height: auto;
+  border: white 3px solid;
+}
+
+.bio {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-area: bio;
+  font-size: 0.9rem;
+}
+
+.job-1 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: job1;
+  font-size: 0.8rem;
+}
+
+.job-2 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: job2;
+  font-size: 0.8rem;
+}
+
+.job-3 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+  grid-area: job3;
+  font-size: 0.8rem;
+}
+
+.work {
+  position: absolute;
+  left: 10vh;
+  top: 10vh;
+}
+
+.work .heading,
+.work .subheading {
+  margin-bottom: 6px;
+  font-size: 3rem;
+  font-family: Arial, sans-serif;
+  color: white;
+  margin-left: 20%;
+}
+
+.work .subheading {
+  font-size: 1.5rem;
+  color: #b9f148;
+}
+
+.projects {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.projects img {
+  width: 50%;
+  padding-left: 10%;
+}
+
+.btn {
+  display: block;
+  padding: 1rem 0.5rem;
+  border: 0;
+  text-decoration: none;
+  font-family: Arial, sans-serif;
+  position: relative;
+  margin-bottom: 0.3rem;
+  text-align: center;
+  width: 80%;
+  color: black;
+}
+
+.btn:hover {
+  background-color: #e4dcc2;
+}
+
+.dark {
+  background: #b9f148;
+}
+
+.light {
+  background: white;
+}
+
+.contact {
+  position: absolute;
+  left: 50vh;
+  top: 20vh;
+}
+
+.boxes {
+  margin-top: 1rem;
+  color: white;
+}
+
+.boxes div {
+  font-size: 2rem;
+  border: 3px #b9f148 solid;
+  padding: 1.5rem 2.5rem;
+  margin-bottom: 3rem;
+}
+
+.contact h1,
+.contact h2 {
+  color: white;
+  font-size: 50px;
+  font-family: Arial, sans-serif;
+}
+
+@media (max-width: 840px) {
+  .home {
+    position: absolute;
+    top: 25%;
+    left: 15%;
+  }
+  .home img {
+    height: 160px;
+    position: absolute;
+    left: 15%;
+    top: 100%;
+  }
+  .home h1 {
+    font-size: 70px;
+  }
+  .home h2 {
+    font-size: 45px;
+  }
+  .btn {
+    padding: 1rem 0.5rem;
+    border: 0;
+    position: relative;
+    margin-bottom: 0.3rem;
+    text-align: center;
+    width: 80%;
+  }
+  .project_item {
+    margin-bottom: 50px;
+  }
+  .work {
+    position: absolute;
+    left: 10vh;
+    top: 5vh;
+  }
+}
+
+@media (max-width: 630px) {
+  .home {
+    position: absolute;
+    top: 20%;
+    left: 25%;
+  }
+  .home img {
+    height: 160px;
+    position: absolute;
+    left: 10%;
+    top: 130%;
+  }
+  .home h1 {
+    font-size: 60px;
+  }
+  .home h2 {
+    font-size: 25px;
+  }
+  .about {
+    position: absolute;
+    top: 3%;
+    left: 15%;
+  }
+  .about img {
+    display: none;
+  }
+  .about h1 {
+    font-size: 50px;
+  }
+  .about-info {
+    display: -ms-grid;
+    display: grid;
+    grid-gap: 30px;
+        grid-template-areas: "bio bio" "job1 job2 ";
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    width: 30%;
+    height: 20%;
+    color: #b9f148;
+    font-family: Arial, sans-serif;
+  }
+}
+
+@media (max-width: 520px) {
+  .home img {
+    height: 200px;
+    position: absolute;
+    left: 10%;
+    top: 130%;
+  }
+  .home h1 {
+    font-size: 80px;
+  }
+  .home h2 {
+    font-size: 30px;
+  }
+  .about {
+    position: absolute;
+    top: 3%;
+    left: 25%;
+  }
+  .about img {
+    display: none;
+  }
+  .about h1 {
+    font-size: 50px;
+  }
+  .btn {
+    padding: 1rem 0.5rem;
+    border: 0;
+    position: relative;
+    margin-bottom: 0.3rem;
+    text-align: center;
+    width: 80%;
+  }
+  .work .heading,
+  .subheading {
+    font-size: 50px;
+    margin: 0px;
+  }
+  .projects img {
+    width: 60%;
+  }
+  .work {
+    position: absolute;
+    left: 8vh;
+    top: 5vh;
+  }
+  .contact {
+    left: 8vh;
+    top: 10vh;
+  }
+  .boxes div {
+    font-size: 20px;
+    width: 70%;
+    margin-left: 3px;
+  }
+}
+
+@media (max-width: 670px) {
+  .home {
+    position: absolute;
+    top: 15%;
+    left: 25%;
+  }
+  .home img {
+    position: absolute;
+    left: 5%;
+    top: 100%;
+    margin-top: 30%;
+  }
+  .home h1 {
+    font-size: 50px;
+  }
+  .home h2 {
+    font-size: 30px;
+  }
+  .about img {
+    display: none;
+  }
+  .about-info {
+    display: -ms-grid;
+    display: grid;
+    grid-gap: 30px;
+        grid-template-areas: "bio bio" "job1 job2 ";
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    width: 50%;
+    height: 30%;
+    color: #b9f148;
+    font-family: Arial, sans-serif;
+  }
+}
+
+@media (max-width: 420px) {
+  .btn {
+    padding: 0.8rem 0.5rem;
+    border: 0;
+    position: relative;
+    margin-bottom: 0.3rem;
+    text-align: center;
+    width: 80%;
+  }
+  .projects img {
+    width: 50%;
+  }
+  .work {
+    position: absolute;
+    left: 10vh;
+    top: 5vh;
+  }
+}
+
+@media (max-width: 1200px) {
+  .contact {
+    left: 20vh;
+    top: 20vh;
+  }
+}
+
+@media (max-width: 840px) {
+  .contact {
+    left: 8vh;
+    top: 20vh;
+  }
+}
+/*# sourceMappingURL=style.css.map */
